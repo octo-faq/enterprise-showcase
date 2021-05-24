@@ -108,13 +108,13 @@ export default {
         },
         {
           icon: 'mdi-bookshelf',
-          title: 'Collections',
+          title: 'Demo Collections',
           to: '/collections'
         },
         {
           icon: 'mdi-information-outline',
-          title: 'Resources',
-          to: '/resources'
+          title: 'Getting Started',
+          to: '/getting-started'
         }
       ],
       title: 'Octo Showcase',

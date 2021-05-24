@@ -70,7 +70,7 @@
           </small>
         </footer>
       </blockquote> -->
-      <vue-markdown>{{ b }}</vue-markdown>
+      <vue-markdown>{{ markdown }}</vue-markdown>
     </v-col>
   </v-row>
 </template>
@@ -80,18 +80,9 @@
 
 export default {
   async asyncData ({ $content, params }) {
-    const a = await fetch('https://raw.githubusercontent.com/octo-faq/getting-started/main/README.md')
-    const b = await a.text()
-    // console.log(b)
-    return { b }
-    // const collections = await $content('collections', params.slug)
-    //   .only(['title', 'description', 'slug'])
-    //   .sortBy('createdAt', 'asc')
-    //   .fetch()
-
-    // return {
-    //   collections
-    // }
+    const data = await fetch('https://raw.githubusercontent.com/octo-faq/getting-started/main/README.md')
+    const markdown = await data.text()
+    return { markdown }
   }
 }
 </script>
