@@ -77,9 +77,8 @@
 
 <script>
 
-
 export default {
-  async asyncData ({ $content, params }) {
+  async asyncData () {
     const data = await fetch('https://raw.githubusercontent.com/octo-faq/getting-started/main/README.md')
     const markdown = await data.text()
     return { markdown }
