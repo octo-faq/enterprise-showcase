@@ -1,7 +1,7 @@
 <template>
   <v-row>
-    <v-col class="text-center">
-      <img
+    <v-col>
+      <!-- <img
         src="GitHub-Mark-Light-120px-plus.png"
         alt="GitHub"
         class="mb-5"
@@ -29,7 +29,29 @@
             <em>&mdash;The Zen of GitHub</em>
           </small>
         </footer>
-      </blockquote>
+      </blockquote> -->
+      <vue-markdown>{{ b }}</vue-markdown>
     </v-col>
   </v-row>
 </template>
+
+<script>
+
+
+export default {
+  async asyncData ({ $content, params }) {
+    const a = await fetch('https://raw.githubusercontent.com/octo-faq/getting-started/main/README.md')
+    const b = await a.text()
+    // console.log(b)
+    return { b }
+    // const collections = await $content('collections', params.slug)
+    //   .only(['title', 'description', 'slug'])
+    //   .sortBy('createdAt', 'asc')
+    //   .fetch()
+
+    // return {
+    //   collections
+    // }
+  }
+}
+</script>
