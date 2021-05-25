@@ -6,6 +6,7 @@ repositories:
 - octo-faq/advanced-security-terraform
 - octo-faq/code-scanning-javascript-demo
 - octo-faq/sample-pipeline-files
+- octo-faq/get-dependabot-alerts-sample
 ---
 
 <!-- # GitHub Advanced Security
