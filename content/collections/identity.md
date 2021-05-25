@@ -3,7 +3,7 @@ title: Identity
 description: Identity and Access Management 🔒
 topic: identity
 repositories:
-- https://github.com/octo-faq/EMU-Onboarding
+- octo-faq/EMU-Onboarding
 ---
 
 <!-- # GitHub Advanced Security
