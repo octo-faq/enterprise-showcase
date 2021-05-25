@@ -5,6 +5,7 @@ topic: advanced-security
 repositories:
 - octo-faq/advanced-security-terraform
 - octo-faq/code-scanning-javascript-demo
+- octo-faq/sample-pipeline-files
 ---
 
 <!-- # GitHub Advanced Security
